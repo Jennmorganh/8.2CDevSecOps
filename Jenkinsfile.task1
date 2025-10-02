@@ -1,0 +1,26 @@
+pipeline {
+  agent any
+  stages {
+    stage('Stage 1: Build') {
+      steps { echo 'Task: Compile and package | Tool : Maven' }
+    }
+    stage('Stage 2: Unit and Integration Tests') {
+      steps { echo 'Task: Run unit and integration test | Tool : JUnit/Jest/Mocha' }
+    }
+    stage('Stage 3: Code Analysis') {
+      steps { echo 'Task: Static code analysis | Tool : ESLint/Checkstyle/PMD' }
+    }
+    stage('Stage 4: Security Scan') {
+      steps { echo 'Task: Dependency and vuln scan | Tool : npm audit/Snyk/OWASP DC' }
+    }
+    stage('Stage 5: Deploy to Staging') {
+      steps { echo 'Task: Deploy to staging | Tool : SSH/Ansible/Docker Compose' }
+    }
+    stage('Stage 6: Test on Staging') {
+      steps { echo 'Task: E2E/API tests on staging | Tool : Cypress/Postman–Newman' }
+    }
+    stage('Stage 7: Deploy to Production') {
+      steps { echo 'Task: Deploy to prod (with approval) | Tool : Ansible/Terraform' }
+    }
+  }
+}
