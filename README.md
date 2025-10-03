@@ -215,3 +215,4 @@ When the wizard is done, restart the application and run the exploits again to c
 
 ## Triggers for Jenkins Demo
 > Task 1 demo: trigger Jenkins auto-build (task1-demo)
+> Test to check if Jenkins will auto-build after this new commit changes
