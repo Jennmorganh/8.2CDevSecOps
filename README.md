@@ -214,4 +214,4 @@ In this application, the default `snyk wizard` answers will fix all the issues.
 When the wizard is done, restart the application and run the exploits again to confirm they are fixed.
 
 ## Triggers for Jenkins Demo
-Trigger: Task1 demo – please start Jenkins (timestamp placeholder).
+> Task 1 demo: trigger Jenkins auto-build (task1-demo)
